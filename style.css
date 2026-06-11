@@ -1,0 +1,51 @@
+/* 채도 정적 페이지 — 지원/법무. 브랜드 크림 톤(DESIGN.md). 외부 폰트 의존 없음(시스템 스택). */
+:root {
+  --cream0: #FCF8F1;
+  --cream1: #F6F0E6;
+  --ink: #2B2622;
+  --ink-soft: #6B6258;
+  --clay-ink: #B23E2A; /* AA 대비 코랄(텍스트용) */
+  --line: #E7DEcf;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--cream0);
+  color: var(--ink);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; }
+header.brand { display: flex; align-items: baseline; gap: 10px; margin-bottom: 28px; }
+header.brand .ko { font-size: 26px; font-weight: 800; letter-spacing: -0.4px; }
+header.brand .en { font-size: 14px; color: var(--ink-soft); font-style: italic; }
+h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin: 0 0 10px; }
+h2 { font-size: 19px; font-weight: 700; margin: 30px 0 8px; }
+h3 { font-size: 16px; font-weight: 700; margin: 20px 0 6px; }
+a { color: var(--clay-ink); text-decoration: none; }
+a:hover { text-decoration: underline; }
+p, li { color: var(--ink); }
+small, .muted { color: var(--ink-soft); font-size: 13.5px; }
+.card {
+  background: var(--cream1);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 16px 0;
+}
+.row { display: flex; justify-content: space-between; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.row:last-child { border-bottom: 0; }
+.btn {
+  display: inline-block; background: var(--clay-ink); color: #fff; padding: 12px 18px;
+  border-radius: 999px; font-weight: 700; margin-top: 6px;
+}
+.btn:hover { text-decoration: none; opacity: 0.92; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14.5px; }
+th, td { border: 1px solid var(--line); padding: 8px 11px; text-align: left; vertical-align: top; }
+th { background: var(--cream1); font-weight: 700; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 26px 0; }
+blockquote { margin: 14px 0; padding: 10px 16px; background: var(--cream1); border-left: 3px solid var(--clay-ink); border-radius: 0 10px 10px 0; color: var(--ink-soft); font-size: 14.5px; }
+.banner { background: #fff3ef; border: 1px solid #f0c4b8; color: var(--clay-ink); border-radius: 12px; padding: 12px 16px; font-size: 14px; margin: 0 0 22px; }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 13px; }
