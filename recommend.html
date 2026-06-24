@@ -4,29 +4,201 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>채도(Chaedo) — 퍼스널컬러 추천 상품</title>
-<meta name="description" content="채도(Chaedo) 퍼스널컬러 진단 결과에 어울리는 화장품·패션·소품을 제안하는 추천 페이지입니다.">
+<meta name="description" content="채도(Chaedo) 퍼스널컬러 진단 결과(4계절)에 어울리는 색의 화장품·패션·안경을 제안하는 추천 페이지입니다.">
 <link rel="stylesheet" href="style.css">
+<style>
+  /* 추천 페이지 전용 보강 — 브랜드 크림 톤 유지 */
+  .seasonnav { display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 22px; }
+  .seasonnav a { display:inline-block; padding:7px 13px; border-radius:999px; background:#F6F0E6;
+    color:#5a5246; font-size:13px; font-weight:600; text-decoration:none; border:1px solid #ece3d4; }
+  .seasonnav a:hover { background:#efe7d8; }
+  .swatches { display:flex; gap:7px; margin:2px 0 12px; flex-wrap:wrap; }
+  .swatch { width:30px; height:30px; border-radius:9px; box-shadow:inset 0 0 0 1px rgba(0,0,0,.06); }
+  .cat { margin:16px 0 0; }
+  .cat h3 { margin:0 0 4px; }
+  .linkslot { display:block; margin-top:8px; }
+  .soon { display:inline-block; font-size:13px; color:#9a907f; font-style:normal; }
+  .seasontag { font-size:13px; font-weight:600; color:#8a7f6c; }
+</style>
 </head>
 <body>
 <div class="wrap">
   <header class="brand"><span class="ko">채도</span><span class="en">Chaedo</span></header>
 
   <h1>퍼스널컬러 추천 상품</h1>
-  <p class="muted">채도가 진단한 퍼스널컬러(4계절 12타입)에 어울리는 색의 화장품·패션·소품을 제안합니다. 색 조화 참고용이며, 구매는 쿠팡에서 이루어집니다.</p>
+  <p class="muted">채도가 진단한 퍼스널컬러(4계절)에 어울리는 색의 화장품·패션·안경을 제안합니다. 색 조화 참고용이며, 구매는 쿠팡에서 이루어집니다. 내 계절을 눌러 바로 이동하세요.</p>
 
-  <div class="card">
-    <h2 style="margin-top:0">웜톤 추천 — 코랄·피치 립</h2>
-    <p>봄·가을 웜톤에 어울리는 코랄/피치 계열 색조 화장품 예시입니다.</p>
-    <a class="btn" href="https://link.coupang.com/a/eBfVRZqrnh" target="_blank" rel="noopener nofollow sponsored">쿠팡에서 추천 상품 보기 →</a>
-  </div>
+  <nav class="seasonnav">
+    <a href="#spring">🌸 봄 웜</a>
+    <a href="#summer">🌊 여름 쿨</a>
+    <a href="#autumn">🍂 가을 웜</a>
+    <a href="#winter">❄️ 겨울 쿨</a>
+  </nav>
 
+  <!-- ───────────────── 봄 웜 ───────────────── -->
+  <section id="spring" class="card">
+    <span class="seasontag">SPRING WARM</span>
+    <h2 style="margin-top:2px">봄 웜 — 화사한 코랄·피치</h2>
+    <div class="swatches">
+      <span class="swatch" style="background:#FF7F6E"></span>
+      <span class="swatch" style="background:#FFB089"></span>
+      <span class="swatch" style="background:#F4C95D"></span>
+      <span class="swatch" style="background:#F3E9D2"></span>
+      <span class="swatch" style="background:#C6D98C"></span>
+    </div>
+    <p>밝고 따뜻한 색이 얼굴을 가장 화사하게 받쳐줍니다. 노란 기가 도는 맑은 색이 잘 맞아요.</p>
+    <div class="cat">
+      <h3>화장품</h3>
+      <p>코랄·피치·살구빛 립과 블러셔, 골드 펄 섀도.</p>
+      <span class="linkslot" data-key="spring-cosmetic"></span>
+    </div>
+    <div class="cat">
+      <h3>패션</h3>
+      <p>아이보리·카멜·코랄·라이트옐로우·연두 등 밝고 따뜻한 톤.</p>
+      <span class="linkslot" data-key="spring-fashion"></span>
+    </div>
+    <div class="cat">
+      <h3>안경·소품</h3>
+      <p>골드·샴페인골드 프레임, 투명 브라운, 따뜻한 베이지 소품.</p>
+      <span class="linkslot" data-key="spring-glasses"></span>
+    </div>
+  </section>
+
+  <!-- ───────────────── 여름 쿨 ───────────────── -->
+  <section id="summer" class="card">
+    <span class="seasontag">SUMMER COOL</span>
+    <h2 style="margin-top:2px">여름 쿨 — 부드러운 로즈·라벤더</h2>
+    <div class="swatches">
+      <span class="swatch" style="background:#C9B8E8"></span>
+      <span class="swatch" style="background:#A9C7E8"></span>
+      <span class="swatch" style="background:#F0BBD0"></span>
+      <span class="swatch" style="background:#B9BCC4"></span>
+      <span class="swatch" style="background:#F4F4F6"></span>
+    </div>
+    <p>부드럽고 시원한 색이 잘 어울립니다. 파스텔·뮤트 톤의 차분한 색을 추천해요.</p>
+    <div class="cat">
+      <h3>화장품</h3>
+      <p>로즈·핑크·라벤더 립과 블러셔, 실버·핑크 펄 섀도.</p>
+      <span class="linkslot" data-key="summer-cosmetic"></span>
+    </div>
+    <div class="cat">
+      <h3>패션</h3>
+      <p>라벤더·파우더블루·소프트핑크·그레이·화이트 등 시원한 파스텔.</p>
+      <span class="linkslot" data-key="summer-fashion"></span>
+    </div>
+    <div class="cat">
+      <h3>안경·소품</h3>
+      <p>실버·로즈골드 프레임, 투명 핑크/그레이, 쿨톤 실버 주얼리.</p>
+      <span class="linkslot" data-key="summer-glasses"></span>
+    </div>
+  </section>
+
+  <!-- ───────────────── 가을 웜 ───────────────── -->
+  <section id="autumn" class="card">
+    <span class="seasontag">AUTUMN WARM</span>
+    <h2 style="margin-top:2px">가을 웜 — 깊은 벽돌·카멜</h2>
+    <div class="swatches">
+      <span class="swatch" style="background:#B5532E"></span>
+      <span class="swatch" style="background:#C99A3B"></span>
+      <span class="swatch" style="background:#7E7A4E"></span>
+      <span class="swatch" style="background:#8A5A3B"></span>
+      <span class="swatch" style="background:#7E3B47"></span>
+    </div>
+    <p>깊고 차분한 따뜻한 색이 잘 어울립니다. 흙빛·가을 단풍 같은 톤이 얼굴을 살려줘요.</p>
+    <div class="cat">
+      <h3>화장품</h3>
+      <p>벽돌·테라코타·브릭브라운 립(MLBB), 골드·브론즈 섀도.</p>
+      <span class="linkslot" data-key="autumn-cosmetic"></span>
+    </div>
+    <div class="cat">
+      <h3>패션</h3>
+      <p>카멜·머스타드·카키·브라운·올리브·와인 등 깊은 어스 톤.</p>
+      <span class="linkslot" data-key="autumn-fashion"></span>
+    </div>
+    <div class="cat">
+      <h3>안경·소품</h3>
+      <p>골드·앤틱골드, 토터셸(거북등) 프레임, 브라운 가죽 소품.</p>
+      <span class="linkslot" data-key="autumn-glasses"></span>
+    </div>
+  </section>
+
+  <!-- ───────────────── 겨울 쿨 ───────────────── -->
+  <section id="winter" class="card">
+    <span class="seasontag">WINTER COOL</span>
+    <h2 style="margin-top:2px">겨울 쿨 — 선명한 레드·푸시아</h2>
+    <div class="swatches">
+      <span class="swatch" style="background:#1C1C20"></span>
+      <span class="swatch" style="background:#D81E3F"></span>
+      <span class="swatch" style="background:#C81E78"></span>
+      <span class="swatch" style="background:#2647B0"></span>
+      <span class="swatch" style="background:#6E2B5E"></span>
+    </div>
+    <p>선명하고 시원한 색이 잘 어울립니다. 또렷한 대비와 차가운 색이 인상을 살려줘요.</p>
+    <div class="cat">
+      <h3>화장품</h3>
+      <p>푸시아·트루레드·플럼·버건디 립, 실버 섀도.</p>
+      <span class="linkslot" data-key="winter-cosmetic"></span>
+    </div>
+    <div class="cat">
+      <h3>패션</h3>
+      <p>블랙·화이트·네이비·로열블루·푸시아·트루레드 등 또렷한 색.</p>
+      <span class="linkslot" data-key="winter-fashion"></span>
+    </div>
+    <div class="cat">
+      <h3>안경·소품</h3>
+      <p>실버·건메탈·블랙 프레임, 선명한 컬러, 화이트골드 주얼리.</p>
+      <span class="linkslot" data-key="winter-glasses"></span>
+    </div>
+  </section>
+
+  <!-- ───────────────── 제휴 안내 (공정위) ───────────────── -->
   <div class="card">
     <h2 style="margin-top:0">제휴(쿠팡 파트너스) 안내</h2>
     <p><strong>이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</strong></p>
-    <p class="muted">상품의 가격·재고·정보는 쿠팡 조회 시점 기준이며 실제와 다를 수 있습니다. 추천은 색 조화 참고용으로, 특정 효능·효과를 보장하지 않습니다.</p>
+    <p class="muted">상품의 가격·재고·정보는 쿠팡 조회 시점 기준이며 실제와 다를 수 있습니다. 추천은 색 조화 참고용으로, 특정 효능·효과를 보장하지 않습니다. 구매자에게 추가 비용은 없습니다.</p>
   </div>
 
   <p class="muted" style="margin-top:32px"><a href="index.html">← 채도 지원·문의</a></p>
 </div>
+
+<script>
+  /* ───────────────────────────────────────────────────────────
+     쿠팡 파트너스 딥링크 — 여기 한 곳만 수정하면 페이지 전체 반영.
+     값 비우면("") 해당 칸은 "곧 추가됩니다"로 표시(깨진 링크 없음).
+     링크 발급: 쿠팡 파트너스 → 링크 생성 → (검색/상품 URL 붙여넣기) → link.coupang.com/a/... 복사.
+     ─────────────────────────────────────────────────────────── */
+  const LINKS = {
+    "spring-cosmetic": "https://link.coupang.com/a/eBfVRZqrnh",
+    "spring-fashion":  "",
+    "spring-glasses":  "",
+    "summer-cosmetic": "",
+    "summer-fashion":  "",
+    "summer-glasses":  "",
+    "autumn-cosmetic": "",
+    "autumn-fashion":  "",
+    "autumn-glasses":  "",
+    "winter-cosmetic": "",
+    "winter-fashion":  "",
+    "winter-glasses":  "",
+  };
+
+  document.querySelectorAll(".linkslot").forEach(function (slot) {
+    var url = LINKS[slot.getAttribute("data-key")];
+    if (url) {
+      var a = document.createElement("a");
+      a.className = "btn";
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener nofollow sponsored";
+      a.textContent = "쿠팡에서 보기 →";
+      slot.appendChild(a);
+    } else {
+      var s = document.createElement("span");
+      s.className = "soon";
+      s.textContent = "추천 링크 곧 추가됩니다";
+      slot.appendChild(s);
+    }
+  });
+</script>
 </body>
 </html>
